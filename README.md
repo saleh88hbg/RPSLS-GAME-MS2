@@ -14,8 +14,7 @@ Give it a try!
 
 ## User Experriense
 
-![Responsive Mockup]()
-
+![Responsive RPSLS](assets/img/responsiverock.png)
 
 ## Features 
 
@@ -105,8 +104,11 @@ To complete that i need to improve my programming skills and to learn more.
 [Bootstrap css framework](https://getbootstrap.com/)
 - Was used for the good appearance to the menu and buttons for responsive purpose.
 
-[Bootstrap JavaScript plugin including jquery library](https://getbootstrap.com/)
-- Was used to make the websites more responsive and to extend the functionality with the javascript code.
+[Bootstrap JavaScript plugin](https://getbootstrap.com/)
+- Was used to make the websites  to extend the functionality with the javascript code.
+
+[Jquery library](https://jquery.com/)
+- Was used because bootsrap JS dependend on Jquery library.
 
 [Javascript](https://en.wikipedia.org/wiki/JavaScript)
 - Was used for to code relevant responses to user actions and calculating.
@@ -126,10 +128,12 @@ To complete that i need to improve my programming skills and to learn more.
 ### Validator Testing : W3C and JSHint
 
 - HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
+  - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2F)
+  - Errors and warning related to bootstrap.
 
 - CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
+  - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
+  - Errors and warning related to bootstrap.
 
 - Javascript
   - No errors were found when passing through the official [(JSHint) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
@@ -145,15 +149,12 @@ To complete that i need to improve my programming skills and to learn more.
 
 I also used Lighthouse to audit the performance of the websites.
 
-Mobile device: 94% performance
-Desktop: 85% performance
-
+Mobile device: 95% performance
+Desktop: 100% performance
 
 ### Unfixed Bugs
 
-- Still working on img bugs in script code
-- Still working on score limiter when chosen in script code
-- Still working on set up two game modes integration in script code
+  - None
 
 ## Deployment
 

@@ -41,16 +41,16 @@ const imageFolderPath = "assets";
 /** All the options of user */
 var userOptions;
 
-/** All the options of robot */
+/** All the options of computer */
 var computerOptions;
 
 /** Where selected option of user will be shown */
 var userChoiceArea;
 
-/** Where selected option of robot will be shown */
+/** Where selected option of computer will be shown */
 var computerChoiceArea;
 
-/** Aser and robot score */
+/** Aser and computer score */
 var userScore;
 var computerScore;
 var gameLimit = 0;
@@ -69,7 +69,7 @@ const play = (e) => {
   /** Number of options available*/
   const length = deck.length;
 
-  /** Generate a random number between number of options available for robot*/
+  /** Generate a random number between number of options available for computer*/
   var computer;
   if (gameMode == 'modern') {
     computer = Math.floor(Math.random() * length);
@@ -81,7 +81,7 @@ const play = (e) => {
   showUserOption(user, userChoiceArea);
   highlightSelectedOption(user, userOptions);
 
-  /** Show the robot selected option*/
+  /** Show the computer selected option*/
   showUserOption(computer, computerChoiceArea);
   highlightSelectedOption(computer, computerOptions);
 
@@ -153,7 +153,7 @@ const calculateScore = (user, computer) => {
     addScore(computerScore);
     showMessage("you lost this round!");
   }
-  //check if the local storage contains userWins if not let userWins = 0 
+  /** check if the local storage contains userWins if not let userWins = 0 */
   if (!localStorage.userWins) {
     localStorage.setItem("userWins", 0);
   }
@@ -169,16 +169,16 @@ const calculateScore = (user, computer) => {
       localStorage.setItem("userWins", Number(localStorage.userWins) + 1);
       showMessage('Congratulations You won the game!')
       gameEnds = true;
-      //show the play again button
+      /** show the play again button */
       playAgain.style.display = "block";
 
     }
     /** Check for computer score is reached the game limit */
     if (computerScore.innerHTML == gameLimit) {
-      /**when game ends increment the userLost by 1 in localstorage */
+      /** When game ends increment the userLost by 1 in localstorage */
       localStorage.setItem("userLost", Number(localStorage.userLost) + 1);
       showMessage('Oops You lost the game!');
-      //show the play again button
+      /** Show the play again button */
       playAgain.style.display = "block";
     }
   }
@@ -197,22 +197,22 @@ const reset = () => {
   computerOptions.forEach((e) => {
     e.classList.remove("active");
   });
-  //hide the play again button
+  /** Hide the play again button */
   playAgain.style.display = "none";
 
 };
 
-/** show the scoreboard results */
+/** Show the scoreboard results */
 function setScoreBoardResults() {
   var scoreboard = document.getElementById("scoreboard-body");
-  // add the results in socreboard body after retrieving data from local storage
+  /** Add the results in socreboard body after retrieving data from local storage */
   scoreboard.innerHTML = '<h2> Your Wins : ' + localStorage.userWins + '</h2><BR>';
   scoreboard.innerHTML += '<h2>Your Looses : ' + localStorage.userLost + '</h2>';
 }
 
 function startGame(numberOfRounds, gameMode) {
   this.gameMode = gameMode;
-  //check the game mode from input and launch the appropriate game 
+  /** Check the game mode from input and launch the appropriate game */ 
   if (gameMode == 'classic') {
     launchClassicGame();
   } else {
@@ -222,7 +222,7 @@ function startGame(numberOfRounds, gameMode) {
   userOptions = document.querySelectorAll(
     "#user .available-options .option"
   );
-  //add click listener to each click, and call the function play
+  /** Add click listener to each click, and call the function play */
   userOptions.forEach((e) => {
     e.addEventListener("click", () => {
       play(e);
@@ -247,7 +247,7 @@ function startGame(numberOfRounds, gameMode) {
   var gameScreen = document.getElementById("gameScreen");
   playAgain = document.getElementById("play-again");
 
-  //remove the play again on game start
+  /** Remove the play again on game start */
   if (playAgain) {
     playAgain.style.display = "none";
   }
@@ -268,11 +268,11 @@ function startGame(numberOfRounds, gameMode) {
 function playAgainClick() {
   reset();
 }
-/** show the main menu screen */
+/** Show the main menu screen */
 function back() {
-  // reset the game data
+  /** Reset the game data */
   reset();
-  //check if the start screen in none or not, if not show the main menu screen
+  /** Check if the start screen in none or not, if not show the main menu screen */
   if (startScreen.style.display === "none") {
     startScreen.style.display = "block";
     gameScreen.style.display = "none";
@@ -282,7 +282,7 @@ function back() {
 
   }
 }
-/**launch the Modern game and fill the html with the classic game elements */
+/** Launch the Modern game and fill the html with the classic game elements */
 function launchModernGame() {
   document.getElementById("gameScreen").innerHTML = `
 
@@ -358,7 +358,7 @@ function launchModernGame() {
     </div>`;
 }
 
-/**launch the classic game, and fill the html with the modern game elements */
+/** Launch the classic game, and fill the html with the modern game elements */
 function launchClassicGame() {
   document.getElementById("gameScreen").innerHTML = `
 
