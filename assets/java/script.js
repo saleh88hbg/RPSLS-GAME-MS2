@@ -50,7 +50,7 @@ var userChoiceArea;
 /** Where selected option of computer will be shown */
 var computerChoiceArea;
 
-/** Aser and computer score */
+/** User and computer score */
 var userScore;
 var computerScore;
 var gameLimit = 0;
@@ -74,7 +74,7 @@ const play = (e) => {
   if (gameMode == 'modern') {
     computer = Math.floor(Math.random() * length);
   } else {
-    //remove the last 2 elements from the deck if its classic game
+    /** remove the last 2 elements from the deck if its classic game */
     computer = Math.floor(Math.random() * (length - 2));
   }
   /** Show the users selected option and highlight it*/
@@ -92,7 +92,10 @@ const play = (e) => {
 
 /** Generate an image element*/
 const generateImgElement = (index) => {
-  const { image, name } = deck[index];
+  const {
+    image,
+    name
+  } = deck[index];
   const imgElement = document.createElement("img");
   imgElement.src = `${imageFolderPath}/${image}`;
   imgElement.alt = name;
@@ -120,7 +123,9 @@ const highlightSelectedOption = (index, options) => {
 
 /** Change the score*/
 const addScore = (player) => {
-  const { innerHTML } = player;
+  const {
+    innerHTML
+  } = player;
   player.innerHTML = Number(innerHTML) + 1;
 };
 
@@ -167,7 +172,7 @@ const calculateScore = (user, computer) => {
     if (userScore.innerHTML == gameLimit) {
       /**when game ends increment the userWins by 1 in localstorage*/
       localStorage.setItem("userWins", Number(localStorage.userWins) + 1);
-      showMessage('Congratulations You won the game!')
+      showMessage('Congratulations You won the game!');
       gameEnds = true;
       /** show the play again button */
       playAgain.style.display = "block";
@@ -212,7 +217,7 @@ function setScoreBoardResults() {
 
 function startGame(numberOfRounds, gameMode) {
   this.gameMode = gameMode;
-  /** Check the game mode from input and launch the appropriate game */ 
+  /** Check the game mode from input and launch the appropriate game */
   if (gameMode == 'classic') {
     launchClassicGame();
   } else {
@@ -265,6 +270,7 @@ function startGame(numberOfRounds, gameMode) {
 
   }
 }
+
 function playAgainClick() {
   reset();
 }

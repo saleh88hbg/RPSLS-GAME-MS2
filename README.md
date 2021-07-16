@@ -14,7 +14,7 @@ Give it a try!
 
 ## User Experriense
 
-![Responsive RPSLS](assets/img/responsiverock.png)
+![Responsive RPSLS](assets/readmeimg/responsiverock.png)
 
 ## Features 
 
@@ -71,7 +71,7 @@ Give it a try!
 - __Game "In game mode Classic" section__
 
   - The user will have the ability to play three "cards" gestures.
-  - The score point is linked to the rounds for each win/round will increase the score.
+  - The score point in game is linked to the rounds, for each win/round will increase the score.
   - Information regarding who won the round will appear on screen.
   - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
   - The chosen card/gesture will elevate to the play deck.  
@@ -80,8 +80,11 @@ Give it a try!
 
 - __Game "In game mode Modern" section__
 
-  - 
-  - 
+  - The user will have the ability to play five "cards" gestures.
+  - The score point is linked to the rounds, for each win/round will increase the score.
+  - Information regarding who won the round will appear on screen.
+  - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
+  - The chosen card/gesture will elevate to the play deck.  
 
 ![In game mode Modern including Lizard, Spock](picture)
 
@@ -136,7 +139,7 @@ To complete that i need to improve my programming skills and to learn more.
   - Errors and warning related to bootstrap.
 
 - Javascript
-  - No errors were found when passing through the official [(JSHint) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
+  - No errors were found when passing through the official [(JSHint) validator](https://jshint.com/) 
 
 - DevTools: Chrome
   - No errors were found in the console)   
@@ -165,13 +168,14 @@ Desktop: 100% performance
 
 The live link can be found here - https://saleh88hbg.github.io/RPSLS-GAME-MS2/
 
-# Cloning
+## Cloning
 
-- If you wish to clone this repository you can follow this steps below:
+If you wish to clone this repository you can following steps:
  - Go to the Git Hub website and log in.
  - Locate the Repository used for this project.
- - Under the Repository's name locate the "Code" button.
- - To clone the Repository use the HTTPS link.
+ - Under the Repository's name locate the button "Code" and once cklicked you will see the options to get the url to the repository.
+   copy the URL based on the protocol that you would like to use. 
+ - At the terminal type `git clone` and paste the url copied from the step above.
 
 ## Credits 
 
