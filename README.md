@@ -12,12 +12,9 @@ Give it a try!
 
 [Read more about the real life game and rules!](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
 
-[Read more about the real life game!]()
-
 ## User Experriense
 
 ![Responsive Mockup]()
-
 
 
 ## Features 
@@ -33,8 +30,12 @@ Give it a try!
 
 - __Menu__
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
+  - The menu is fixed and installed on the first page to make it possible to the user to achieve his goal with the site " To Play "
+  - Menu section have been designed and programed so the user can have ability to choose level or game type.
+  - Level easy is the "Classic" game mode where the user only have three alternative to play with "Rock, Paper, Scissors"
+  - Level hard is the upgrade version of the game called "Modern" this game mode add two more in-game weapons to gain a win.
+  - Level hard weapons is two more gestures that can be used to eliminate the computer "by luck".
+  - Level hard weapons added is " Lizard and Spock " for more information please refer to the rules in game or go up in this readme section to read more.
 
 ![Menu](picture)
 
@@ -67,43 +68,43 @@ Give it a try!
 ![In game mode Modern including Lizard, Spock](picture)
 
 
-
-
-
-
 ### Features Left to Implement
-
+In a near future I would like to implement:
 - 2 player mode
-- 
+- Upgrade the UX
 
+To complete that i need to improve my programming skills and to learn more.
 
 ## Languages, Frameworks, IDE, Libraries and Programs
 
 [HTML5](https://en.wikipedia.org/wiki/HTML5)
-Was used for the overall structure of the website.
+- Was used for the overall structure of the website.
 
 [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-Was used for styling the elements and content on the website.
+- Was used for styling the elements and content on the website.
 
 [Bootstrap css framework](https://getbootstrap.com/)
-Was used for the good appearance to the menu and buttons for responsive purpose.
+- Was used for the good appearance to the menu and buttons for responsive purpose.
 
 [Bootstrap JavaScript plugin including jquery library](https://getbootstrap.com/)
-Was used to make the websites more responsive and to extend the functionality with the javascript code.
+- Was used to make the websites more responsive and to extend the functionality with the javascript code.
 
 [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-Was used for to code relevant responses to user actions and calculating.
+- Was used for to code relevant responses to user actions and calculating.
 
 [GitHub:](https://github.com/)
-GitHub was used to store the projects code after being pushed from Git.
+- GitHub was used to store the projects code after being pushed from Git.
+
+[Visual Studio Code](https://code.visualstudio.com/)
+- Was used to develop and write my project.
 
 [Gitpod:](https://www.gitpod.io/)
-Was used to complement the developmend and write my project and push all commits through integrated "git" to Github.
+- Was used to complement the developmend and write my project and push all commits through integrated "git" to Github.
+
 
 ## Testing 
 
-
-### Validator Testing 
+### Validator Testing : W3C and JSHint
 
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
@@ -111,10 +112,29 @@ Was used to complement the developmend and write my project and push all commits
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
 
+- Javascript
+  - No errors were found when passing through the official [(JSHint) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
+
+- DevTools: Chrome
+  - No errors were found in the console)   
+
+- Browser: Edge and Chrome
+  - No problems detected
+  - Responsive
+      
+### Testing : Lighthouse
+
+I also used Lighthouse to audit the performance of the websites.
+
+Mobile device: 94% performance
+Desktop: 85% performance
+
+
 ### Unfixed Bugs
 
-*Still working on img bugs
-*Still working on score limiter when chosen
+- Still working on img bugs in script code
+- Still working on score limiter when chosen in script code
+- Still working on set up two game modes integration in script code
 
 ## Deployment
 
@@ -135,9 +155,6 @@ The live link can be found here - https://saleh88hbg.github.io/RPSLS-GAME-MS2/
 
 ## Credits 
 
-
-
-
 ### Credits for the information and learning material i've used:
 
 - (https://stackoverflow.com/)
@@ -148,17 +165,19 @@ The live link can be found here - https://saleh88hbg.github.io/RPSLS-GAME-MS2/
 ### Content 
 
 - Tutuorial on the build up of the application [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
 
 ### Media
 
 - The Emoje used on the title are from: (https://www.w3schools.com/charsets/ref_emoji.asp)
-- The PNG icons used for the in-game deck/boardwere taken from this open source site: (https://www.clipartkey.com/)
+- The PNG icons used for the in-game deck/board were taken from this open source site: (https://www.clipartkey.com/)
 
 ### Acknowledgments
 
 - My mentor Guido Cecilio for guidance and support.
 - My family and especially my cousin "Ali Chehade" for guidance and support.
 - Code Institute idea from Project Portfolio 2 (Example Idea Nr 1)
-- Prashant Yadav for the beautiful tutorial [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
+- "Prashant Yadav" for the beautiful tutorial and explanation [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
+
+---
+
+"Saleh Chehade" 2021-07-16 "Happy coding"
