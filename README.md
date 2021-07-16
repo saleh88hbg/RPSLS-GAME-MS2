@@ -10,7 +10,9 @@ Give it a try!
 
 [Click here to play the live game/project.](https://saleh88hbg.github.io/RPSLS-GAME-MS2/)
 
-[Read more about the real life game!](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
+[Read more about the real life game and rules!](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
+
+[Read more about the real life game!]()
 
 ## User Experriense
 
@@ -27,26 +29,46 @@ Give it a try!
   - Featured on first screen
   - This section will allow the user to easily understand the purpose of the website. 
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+![Home Screen](picture)
 
-- __The landing page image__
+- __Menu__
 
   - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
   - This section introduces the user to Love Running with an eye catching animation to grab their attention
 
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
+![Menu](picture)
 
-- __Club Ethos Section__
+- __Menu "Play" section__
 
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
+  - 
+  - 
 
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
+![Menu play section](picture)
 
-- __Meetup Times section__
+- __Menu "How to play" section__
 
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
+  - 
+  - 
+
+![Menu how to play section](picture)
+
+- __Game "In game mode Classic" section__
+
+  - 
+  - 
+
+![In game mode Classic](picture)
+
+- __Game "In game mode Modern" section__
+
+  - 
+  - 
+
+![In game mode Modern including Lizard, Spock](picture)
+
+
+
+
 
 
 ### Features Left to Implement
@@ -55,7 +77,7 @@ Give it a try!
 - 
 
 
-### Languages, Frameworks, IDE, Libraries and Programs
+## Languages, Frameworks, IDE, Libraries and Programs
 
 [HTML5](https://en.wikipedia.org/wiki/HTML5)
 Was used for the overall structure of the website.
