@@ -2,23 +2,23 @@
 const deck = [
 
     {
-      image: "/../../img/paper.png",
+      image: "/../../assets/img/paper.png",
       name: "Paper",
     },
     {
-      image: "/../../img/rock.png",
+      image: "/../../assets/img/rock.png",
       name: "Rock",
     },
     {
-      image: "/../../img/scissor.png",
+      image: "/../../assets/img/scissor.png",
       name: "Scissor",
     },
     {
-      image: "/../../img/spock.png",
+      image: "/../../assets/img/spock.png",
       name: "Spock",
     },
     {
-      image: "/../../img/lizard.png",
+      image: "/../../assets/img/lizard.png",
       name: "Lizard",
     },
   ];
@@ -36,7 +36,7 @@ const deck = [
     Spock: ["Scissor", "Rock"],
   };
   /** Folder where images are stored */
-  const imageFolderPath = "assets";
+  const imageFolderPath = "./assets/img";
   
   /** All the options of user */
   var userOptions;
@@ -92,7 +92,7 @@ const deck = [
   const generateImgElement = (index) => {
     const { image, name } = deck[index];
     const imgElement = document.createElement("img");
-    imgElement.src = `${imageFolderPath}/${image}`;
+    imgElement.src = `${imageFolderPath}/${assets}/${image}`;
     imgElement.alt = name;
     imgElement.title = name;
     return imgElement;
@@ -247,19 +247,19 @@ const deck = [
           <div class="available-options">
            
             <span class="option" data-index="0">
-              <img src="img/paper.png" alt="Paper" title="Paper" />
+              <img src="./assets/img/paper.png" alt="Paper" title="Paper" />
             </span>
             <span class="option" data-index="1">
-              <img src="img/rock.png" alt="Rock" title="Rock" />
+              <img src="./assets/img/rock.png" alt="Rock" title="Rock" />
             </span>
             <span class="option" data-index="2">
-              <img src="img/scissor.png" alt="Scissor" title="Scissor" />
+              <img src="./assets/img/scissor.png" alt="Scissor" title="Scissor" />
             </span>
             <span class="option" data-index="3">
-              <img src="img/spock.png" alt="Spock" title="Spock" />
+              <img src="./assets/img/spock.png" alt="Spock" title="Spock" />
             </span>
             <span class="option" data-index="4">
-              <img src="img/lizard.png" alt="Lizard" title="Lizard" />
+              <img src="./assets/img/lizard.png" alt="Lizard" title="Lizard" />
             </span>
           </div>
         </section>
@@ -273,19 +273,19 @@ const deck = [
           <div class="available-options">
            
             <span class="option" data-index="0">
-              <img src="img/paper.png" alt="Paper" title="Paper" />
+              <img src="./assets/img/paper.png" alt="Paper" title="Paper" />
             </span>
             <span class="option" data-index="1">
-              <img src="img/rock.png" alt="Rock" title="Rock" />
+              <img src="./assets/img/rock.png" alt="Rock" title="Rock" />
             </span>
             <span class="option" data-index="2">
-              <img src="img/scissor.png" alt="Scissor" title="Scissor" />
+              <img src="./assets/img/scissor.png" alt="Scissor" title="Scissor" />
             </span>
             <span class="option" data-index="3">
-              <img src="img/spock.png" alt="Spock" title="Spock" />
+              <img src="./assets/img/spock.png" alt="Spock" title="Spock" />
             </span>
             <span class="option" data-index="4">
-              <img src="img/lizard.png" alt="Lizard" title="Lizard" />
+              <img src="./assets/img/lizard.png" alt="Lizard" title="Lizard" />
             </span>
           </div>
         </section>
@@ -311,13 +311,13 @@ const deck = [
         </div>
         <div class="available-options">
           <span class="option" data-index="0">
-            <img src="img/paper.png" alt="Paper" title="Paper" />
+            <img src="./assets/img/paper.png" alt="Paper" title="Paper" />
           </span>
           <span class="option" data-index="1">
-            <img src="img/rock.png" alt="Rock" title="Rock" />
+            <img src="./assets/img/rock.png" alt="Rock" title="Rock" />
           </span>
           <span class="option" data-index="2">
-            <img src="img/scissor.png" alt="Scissor" title="Scissor" />
+            <img src="./assets/img/scissor.png" alt="Scissor" title="Scissor" />
           </span>
         </div>
       </section>
@@ -330,13 +330,13 @@ const deck = [
         </div>
         <div class="available-options">
           <span class="option" data-index="0">
-            <img src="img/paper.png" alt="Paper" title="Paper" />
+            <img src="./assets/img/paper.png" alt="Paper" title="Paper" />
           </span>
           <span class="option" data-index="1">
-            <img src="img/rock.png" alt="Rock" title="Rock" />
+            <img src="./assets/img/rock.png" alt="Rock" title="Rock" />
           </span>
           <span class="option" data-index="2">
-            <img src="img/scissor.png" alt="Scissor" title="Scissor" />
+            <img src="./assets/img/scissor.png" alt="Scissor" title="Scissor" />
           </span>
         </div>
       </section>

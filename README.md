@@ -1,102 +1,142 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock, Paper, Scissors, Lizard or Spock game (RPSLS)!
 
-Welcome saleh88hbg,
+## About 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+The game was built upon the real life game where 2 persons have a battle with hand gestures.
+To make this even more fun are you now able to play with the "AI" computer.
+This game is and have always depend on luck to win! Try out your luck today and make the choice of how many rounds you want to play!
 
-## Gitpod Reminders
+Give it a try!
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+[Click here to play the live game/project.](https://saleh88hbg.github.io/RPSLS-GAME-MS2/)
 
-`python3 -m http.server`
+[Read more about the real life game!](https://en.wikipedia.org/wiki/Rock_paper_scissors#Additional_weapons)
 
-A blue button should appear to click: _Make Public_,
+## User Experriense
 
-Another blue button should appear to click: _Open Browser_.
+![Responsive Mockup]()
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+## Features 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Existing Features
 
-To log into the Heroku toolbelt CLI:
+- __Homepage__
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - Featured on first screen
+  - This section will allow the user to easily understand the purpose of the website. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
 
-------
+- __The landing page image__
 
-## Release History
+  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
+  - This section introduces the user to Love Running with an eye catching animation to grab their attention
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- __Club Ethos Section__
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
+  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- __Meetup Times section__
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
+  - This section will be updated as these times change to keep the user up to date. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Features Left to Implement
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- 2 player mode
+- 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Languages, Frameworks, IDE, Libraries and Programs
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
+Was used for the overall structure of the website.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+[CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+Was used for styling the elements and content on the website.
 
-------
+[Bootstrap css framework](https://getbootstrap.com/)
+Was used for the good appearance to the menu and buttons for responsive purpose.
 
-## FAQ about the uptime script
+[Bootstrap JavaScript plugin including jquery library](https://getbootstrap.com/)
+Was used to make the websites more responsive and to extend the functionality with the javascript code.
 
-**Why have you added this script?**
+[Javascript](https://en.wikipedia.org/wiki/JavaScript)
+Was used for to code relevant responses to user actions and calculating.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+[GitHub:](https://github.com/)
+GitHub was used to store the projects code after being pushed from Git.
 
-**How will this affect me?**
+[Gitpod:](https://www.gitpod.io/)
+Was used to complement the developmend and write my project and push all commits through integrated "git" to Github.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Testing 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Validator Testing 
 
-**So….?**
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css) 
 
-**Can I opt out?**
+### Unfixed Bugs
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+*Still working on img bugs
+*Still working on score limiter when chosen
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+## Deployment
 
-**Anything more?**
+- This website was published using GitHub Page. The procedure is outlined below: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the source section drop-down menu, select the Master Branch
+  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+The live link can be found here - https://saleh88hbg.github.io/RPSLS-GAME-MS2/
 
----
+# Cloning
 
-Happy coding!
+- If you wish to clone this repository you can follow this steps below:
+ - Go to the Git Hub website and log in.
+ - Locate the Repository used for this project.
+ - Under the Repository's name locate the "Code" button.
+ - To clone the Repository use the HTTPS link.
+
+## Credits 
+
+
+
+
+### Credits for the information and learning material i've used:
+
+- (https://stackoverflow.com/)
+- (https://www.w3schools.com/)
+- (https://developer.mozilla.org/)
+
+
+### Content 
+
+- Tutuorial on the build up of the application [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
+- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
+- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+
+### Media
+
+- The Emoje used on the title are from: (https://www.w3schools.com/charsets/ref_emoji.asp)
+- The PNG icons used for the in-game deck/boardwere taken from this open source site: (https://www.clipartkey.com/)
+
+### Acknowledgments
+
+- My mentor Guido Cecilio for guidance and support.
+- My family and especially my cousin "Ali Chehade" for guidance and support.
+- Code Institute idea from Project Portfolio 2 (Example Idea Nr 1)
+- Prashant Yadav for the beautiful tutorial [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
