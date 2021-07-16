@@ -60,6 +60,8 @@ var gameMode = '';
 var roundMessage;
 var gameEnds = false;
 var playAgain;
+var startScreen;
+var gameScreen;
 
 const play = (e) => {
 
@@ -248,8 +250,8 @@ function startGame(numberOfRounds, gameMode) {
   computerScore = document.querySelector("#computer-score");
   roundMessage = document.querySelector("#round-message");
 
-  var startScreen = document.getElementById("startScreen");
-  var gameScreen = document.getElementById("gameScreen");
+  startScreen = document.getElementById("startScreen");
+  gameScreen = document.getElementById("gameScreen");
   playAgain = document.getElementById("play-again");
 
   /** Remove the play again on game start */
