@@ -1,161 +1,176 @@
+
+
+body {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-color: orange;
+} 
+.title {
+  font-weight: bold;
+}
+
+button {
+    cursor: pointer;
+  }
+
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Score style */
+#result {
+  flex: 1 100%;
+}
+
+#round-message,
+#score {
+  text-align: center;
+}
+
+#round-message {
+  font-size: 1em;
+  text-transform: capitalize;
+}
+
+#score {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Player User style */
+.players {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex: 1;
+  padding: 10px 25px;
+  border: #000 2px solid;
+  border-radius: 5px;
+}
+
+.selected-option,
+.name,
+.available-options {
+  display: inline-flex;
+  flex: 1 100%;
+  padding: 5px 0;
+}
+
+.selected-option,
+.name {
+  justify-content: center;
+}
+
+.name {
+  font-size: 1.8em;
+  color: #f44336;
+  font-weight: 600;
+}
+
+/* Options Style */
+.available-options {
+  justify-content: space-between;
+}
+
+.option {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 5px solid #c55c06;
+  box-shadow: 10px 5px 10px;
+  cursor: pointer;
+}
+
+.option.active {
+  border-color: #f44336;
+}
+
+.option:hover > img {
+  transform: scale(1.1);
+}
+
+.option > img {
+  width: 90%;
+  transition: all 0.4s ease;
+}
+
+.selected-option > .option {
+  width: 110px;
+  height: 110px;
+}
+
+/* Rotate the scissor of computer deck */
+#computer.option > img[alt="Scissor"] {
+  transform: rotate(180deg);
+}
+
+#computer .option:hover > img[alt="Scissor"] {
+  transform: rotate(180deg) scale(1.1);
+}
+
+#computer .option {
+  cursor: not-allowed;
+  background-color: #80cbc4;
+}
+
+/* Reset button */
+.reset {
+  display: inline-flex;
+  flex: 1 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.reset > span {
+  font-size: 1.8em;
+  cursor: pointer;
+  border: 1px solid red;
+  padding: 10px 15px;
+  background-color: #f44336;
+  box-shadow: 0 0 3px;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.reset > span:hover {
+  color: #000;
+}
+
+.btn-menu{
+  width: 300px;
+  margin: 5px;
+  border: #000 2px solid;
+  font-family: 'Times New Roman', Times, serif
+}
+
+#gameScreen{
+  display: none;
+}
+#play-again{
+  margin: 5px;
+}
+
+@media screen and (max-width: 400px) {
+
+  .option { 
+    width: 50px;
+    height: 50px; 
   }
-  
-  body {
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    background-color: orange;
-  }
-  
-  .title {
-    font-weight: bold;
-  }
-  
-  button {
-      cursor: pointer;
-    }
-  
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-  }
-  
-  /* Score style */
-  #result {
-    flex: 1 100%;
-  }
-  
-  #round-message,
-  #score {
-    text-align: center;
-  }
-  
-  #round-message {
-    font-size: 2.5em;
-    text-transform: capitalize;
-  }
-  
-  #score {
-    font-size: 3em;
-    margin-bottom: 10px;
-  }
-  
-  /* Player User style */
-  .players {
-    display: inline-flex;
-    flex-wrap: wrap;
-    flex: 1;
-    padding: 10px 25px;
-    border: #000 2px solid;
-    border-radius: 5px;
-  }
-  
-  .selected-option,
-  .name,
-  .available-options {
-    display: inline-flex;
-    flex: 1 100%;
-    padding: 15px 0;
-  }
-  
-  .selected-option,
-  .name {
-    justify-content: center;
-  }
-  
-  .name {
-    font-size: 1.8em;
-    color: #f44336;
-    font-weight: 600;
-  }
-  
-  /* Options Style */
-  .available-options {
-    justify-content: space-between;
-  }
-  
-  .option {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-    padding: 10px;
-    border-radius: 50%;
-    border: 5px solid #c55c06;
-    box-shadow: 10px 5px 10px;
-    cursor: pointer;
-  }
-  
-  .option.active {
-    border-color: #f44336;
-  }
-  
-  .option:hover > img {
-    transform: scale(1.1);
-  }
-  
-  .option > img {
-    width: 90%;
-    transition: all 0.4s ease;
-  }
-  
   .selected-option > .option {
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
   }
-  
-  /* Rotate the scissor of computer deck */
-  #computer.option > img[alt="Scissor"] {
-    transform: rotate(180deg);
-  }
-  
-  #computer .option:hover > img[alt="Scissor"] {
-    transform: rotate(180deg) scale(1.1);
-  }
-  
-  #computer .option {
-    cursor: not-allowed;
-    background-color: #80cbc4;
-  }
-  
-  /* Reset button */
-  .reset {
-    display: inline-flex;
-    flex: 1 100%;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .reset > span {
-    font-size: 1.8em;
-    cursor: pointer;
-    border: 1px solid red;
-    padding: 10px 15px;
-    background-color: #f44336;
-    box-shadow: 0 0 3px;
-    color: #fff;
-    transition: all 0.2s ease;
-  }
-  
-  .reset > span:hover {
-    color: #000;
-  }
-  
-  .btn-menu{
-    width: 300px;
-    margin: 5px;
-    border: #000 2px solid;
-    font-family: 'Times New Roman', Times, serif
-  }
-  
-  #gameScreen{
-    display: none;
-  }
-  
+}  

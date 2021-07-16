@@ -2,121 +2,199 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Play the funny game rock, paper, scissors - now available in modern version including spock and lizard.">
-    <meta name="keywords" content="fun game, play rock, paper, scissors, javascript">
-    <!-- Bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Rock-Paper-Scissors-Lizard-Spock</title>
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Rock-Paper-Scissors-Lizard-spock</title>
+
 </head>
 
 <body>
-    <div id="startScreen">
-      <!-- Title -->
-      <h1 class="title">
-        Rock&#9994; Paper&#9995; Scissors&#9996; Lizard&#129422; Spock&#129304;
-      </h1>
-      <!-- Info how to play -->
-      <p class="text-center">
-        Choose rock, paper, scissors, lizard or spock and see if you can beat the
-        AI robot! &#128126;
-      </p>
-      <!-- MENU -->
-      <div id="main-menu">
-        <div class="play">
-          <button type="button" class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
-            data-target="#exampleModal">Play Classic</button>
-        </div>
-        <div>
-          <button type="button" class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
-            data-target="#modernModal">Play Modern Spock</button>
-        </div>
-        <div>
-          <button class="btn-menu btn btn-primary btn-lg">How to play? Classic</button>
-        </div>
-        <div>
-          <button class="btn-menu btn btn-primary btn-lg">How to play? Modern Spock</button>
-        </div>
+  <div id="startScreen">
+    <!-- Title -->
+    <h1 class="title">
+      Rock&#9994; Paper&#9995; Scissors&#9996; Lizard&#129422; Spock&#129304;
+    </h1>
+    <!-- Info how to play -->
+    <p class="text-center">
+      Choose rock, paper, scissors, lizard or spock and see if you can beat the
+      AI robot! &#128126;
+    </p>
+    <!-- MENU -->
+    <div id="main-menu">
+      <div class="play">
+        <button type="button" class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
+          data-target="#exampleModal">Play Classic</button>
       </div>
-      <!--Classic  Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Select Classic Rounds</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(1,'classic')">1</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(5,'classic')">5</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(10,'classic')">10</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(-1,'classic')">Unlimited</button>
-              </div>
-            </div>
+      <div>
+        <button type="button" class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
+          data-target="#modernModal">Play Modern Spock</button>
+      </div>
+      <div>
+        <button class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#scoreboard" onclick="setScoreBoardResults()">Scoreboard</button>
+      </div>
+      <div>
+        <button class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#howToPlayClassicModal">How to play? Classic</button>
+      </div>
+      <div>
+        <button class="btn-menu btn btn-primary btn-lg" data-toggle="modal"
+        data-target="#howToPlayModernModal">How to play? Modern Spock</button>
+      </div>
+    </div>
+    <!--Classic  Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Select Classic Rounds</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
-        </div>
-      </div>
-      <!-- Modern Modal -->
-      <div class="modal fade" id="modernModal" tabindex="-1" role="dialog" aria-labelledby="modernModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Select Modern Rounds</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+          <div class="modal-body">
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(1,'classic')">1</button>
             </div>
-            <div class="modal-body">
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(1,'modern')">1</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(5,'modern')">5</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(10,'modern')">10</button>
-              </div>
-              <div>
-                <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
-                  onclick="startGame(-1,'modern')">Unlimited</button>
-              </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(5,'classic')">5</button>
+            </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(10,'classic')">10</button>
+            </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(-1,'classic')">Unlimited</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="gameScreen">
+    <!-- Modern Modal -->
+    <div class="modal fade" id="modernModal" tabindex="-1" role="dialog" aria-labelledby="modernModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Select Modern Rounds</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(1,'modern')">1</button>
+            </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(5,'modern')">5</button>
+            </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(10,'modern')">10</button>
+            </div>
+            <div>
+              <button class="btn-menu btn btn-primary btn-lg" data-dismiss="modal"
+                onclick="startGame(-1,'modern')">Unlimited</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <!-- Bootstrap JavaScript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"></script>
-    <!-- JavaScript file -->
-    <script src="./assets/java/script.js"></script>
-  </body>
+
+       <!--Scoreboard  Modal -->
+       <div class="modal fade" id="scoreboard" tabindex="-1" role="dialog" aria-labelledby="scoreboardModalLabel"
+       aria-hidden="true">
+       <div class="modal-dialog" role="document">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="col-12 modal-title text-center" id="exampleModalLabel">Scoreboard</h5>
+             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+             </button>
+           </div>
+           <div id="scoreboard-body" class="modal-body">
+            
+           </div>
+         </div>
+       </div>
+     </div>
+
+    <!--How To Play Classic Modal -->
+    <div class="modal fade" id="howToPlayClassicModal" tabindex="-1" role="dialog" aria-labelledby="howToPlayClassicModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="col-12 modal-title text-center" id="exampleModalLabel">How to play classic</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+       <p>The rules:
+
+        "Stone defeats the scissors.  
+        Scissors beat the paper.
+        Paper conquers stone.</p>
+        <span> <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors">https://en.wikipedia.org/wiki/Rock_paper_scissors</a> </span>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <!--How To Play Modern Modal -->
+      <div class="modal fade" id="howToPlayModernModal" tabindex="-1" role="dialog" aria-labelledby="howToPlayModernModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="col-12 modal-title text-center" id="exampleModalLabel">How to play modern</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>The rules: 
+
+              "Scissors decapitate Scissors cuts paper, 
+              paper covers rock, rock crushes lizard, 
+              lizard poisons Spock, Spock smashes scissors,
+              scissors decapitates lizard, 
+              lizard eats paper, paper disproves Spock,
+              Spock vaporizes rock, 
+              and as it always has, 
+              rock crushes scissors."</p>
+              <span> <a href="https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock"> https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock</a> </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="gameScreen">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap JavaScript file  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <!-- JavaScript file -->
+  <script src="./assets/java/script.js"></script>
+</body>
+
+</html>
