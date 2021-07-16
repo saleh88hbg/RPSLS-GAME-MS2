@@ -41,22 +41,41 @@ Give it a try!
 
 - __Menu "Play" section__
 
-  - 
-  - 
+  - In the play section user can interact with the chose of game mode.
+  - User can eather play "classic" or "modern" mode.
+ 
 
 ![Menu play section](picture)
 
+- __Menu "Chose rounds to play" section__
+
+  - After the user determine wich game mode they want to play.
+  - The user will get the option to chose how many rounds they want to play "5 rounds, 10 rounds or unlimited rounds"
+ 
+
+![Menu chose rounds to play section](picture)
+
 - __Menu "How to play" section__
 
-  - 
-  - 
+  - How to play section will give the user a proper understandig and information about the game rules.
+  - This will give the user an understanding of the logic in the game and who and why the winner win.
 
 ![Menu how to play section](picture)
 
+- __Menu "Scoreboard" section__
+
+  - The application will have the ability to provide the user with high scores to determine how much luck they had.
+  - The user will gain information about the score in proper to have highscore.
+
+![Menu scoreboard](picture)
+
 - __Game "In game mode Classic" section__
 
-  - 
-  - 
+  - The user will have the ability to play three "cards" gestures.
+  - The score point is linked to the rounds for each win/round will increase the score.
+  - Information regarding who won the round will appear on screen.
+  - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
+  - The chosen card/gesture will elevate to the play deck.  
 
 ![In game mode Classic](picture)
 
