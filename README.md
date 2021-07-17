@@ -25,7 +25,7 @@ Give it a try!
   - Featured on first screen
   - This section will allow the user to easily understand the purpose of the website. 
 
-![Home Screen](picture)
+![Home Screen](assets/img/readmeimg/homescreenspock.png)
 
 - __Menu__
 
@@ -36,7 +36,7 @@ Give it a try!
   - Level hard weapons is two more gestures that can be used to eliminate the computer "by luck".
   - Level hard weapons added is " Lizard and Spock " for more information please refer to the rules in game or go up in this readme section to read more.
 
-![Menu](picture)
+![Menu](assets/img/readmeimg/menuspock.png)
 
 - __Menu "Play" section__
 
@@ -44,7 +44,7 @@ Give it a try!
   - User can eather play "classic" or "modern" mode.
  
 
-![Menu play section](picture)
+![Menu play section](assets/img/readmeimg/gamemode.png)
 
 - __Menu "Chose rounds to play" section__
 
@@ -52,21 +52,22 @@ Give it a try!
   - The user will get the option to chose how many rounds they want to play "5 rounds, 10 rounds or unlimited rounds"
  
 
-![Menu chose rounds to play section](picture)
+![Menu chose rounds to play section](assets/img/readmeimg/menugamespock.png)
 
 - __Menu "How to play" section__
 
   - How to play section will give the user a proper understandig and information about the game rules.
   - This will give the user an understanding of the logic in the game and who and why the winner win.
 
-![Menu how to play section](picture)
+![Menu how to play section](assets/img/readmeimg/howtoplayspock.png)
+![Menu how to play section clicked](assets/img/readmeimg/howtoplaycklicked.png)
 
 - __Menu "Scoreboard" section__
 
   - The application will have the ability to provide the user with high scores to determine how much luck they had.
   - The user will gain information about the score in proper to have highscore.
 
-![Menu scoreboard](picture)
+![Menu scoreboard](assets/img/readmeimg/scoreboard.png)
 
 - __Game "In game mode Classic" section__
 
@@ -76,7 +77,7 @@ Give it a try!
   - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
   - The chosen card/gesture will elevate to the play deck.  
 
-![In game mode Classic](picture)
+![In game mode Classic](assets/img/readmeimg/ingameclassic.png)
 
 - __Game "In game mode Modern" section__
 
@@ -86,7 +87,7 @@ Give it a try!
   - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
   - The chosen card/gesture will elevate to the play deck.  
 
-![In game mode Modern including Lizard, Spock](picture)
+![In game mode Modern including Lizard, Spock](assets/img/readmeimg/ingamemodern.png)
 
 
 ### Features Left to Implement
@@ -95,6 +96,8 @@ In a near future I would like to implement:
 - Upgrade the UX
 
 To complete that i need to improve my programming skills and to learn more.
+
+### Fixes and bugs left
 
 ## Languages, Frameworks, IDE, Libraries and Programs
 
