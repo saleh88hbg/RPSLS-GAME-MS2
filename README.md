@@ -14,7 +14,7 @@ Give it a try!
 
 ## User Experriense
 
-![Responsive RPSLS](assets/readmeimg/responsiverock.png)
+![Responsive RPSLS](assets/img/readmeimg/responsiverock.png)
 
 ## Features 
 
@@ -135,7 +135,7 @@ To complete that i need to improve my programming skills and to learn more.
   - Errors and warning related to bootstrap.
 
 - CSS
-  - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
+  - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
   - Errors and warning related to bootstrap.
 
 - Javascript
