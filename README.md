@@ -137,7 +137,7 @@ To complete that i need to improve my programming skills and to learn more.
 
 - HTML
   - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2F)
-  - 
+  - No errors were found when passing through the test.
 
 - CSS
   - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
