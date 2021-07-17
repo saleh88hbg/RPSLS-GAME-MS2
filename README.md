@@ -3,8 +3,8 @@
 ## About 
 
 The game was built upon the real life game where 2 persons have a battle with hand gestures.
-To make this even more fun are you now able to play with the "AI" computer.
-This game is and have always depend on luck to win! Try out your luck today and make the choice of how many rounds you want to play!
+To make this even more fun, you now have the opportunity to play against the "AI" computer.
+This game is and will always be based on luck to win! Try your luck today and make the choice of how many rounds you want to play!
 
 Give it a try!
 
@@ -40,23 +40,23 @@ Give it a try!
 
 - __Menu "Play" section__
 
-  - In the play section user can interact with the chose of game mode.
-  - User can eather play "classic" or "modern" mode.
+- In the play section user can interact with the choice of game mode. 
+- User can either play "classic" or "modern" mode.
  
 
 ![Menu play section](assets/img/readmeimg/gamemode.png)
 
-- __Menu "Chose rounds to play" section__
+- __Menu "Choose rounds to play" section__
 
-  - After the user determine wich game mode they want to play.
-  - The user will get the option to chose how many rounds they want to play "5 rounds, 10 rounds or unlimited rounds"
+  - After the user determine which game mode they want to play.
+  - The user will get the option to choose how many rounds they want to play "1 round, 5 rounds, 10 rounds or unlimited rounds"
  
 
 ![Menu chose rounds to play section](assets/img/readmeimg/menugamespock.png)
 
 - __Menu "How to play" section__
 
-  - How to play section will give the user a proper understandig and information about the game rules.
+  - How to play section will give the user a proper understanding and information about the game rules.
   - This will give the user an understanding of the logic in the game and who and why the winner win.
 
 ![Menu how to play section](assets/img/readmeimg/howtoplayspock.png)
@@ -65,7 +65,7 @@ Give it a try!
 - __Menu "Scoreboard" section__
 
   - The application will have the ability to provide the user with high scores to determine how much luck they had.
-  - The user will gain information about the score in proper to have highscore.
+  - The user will gain information about the score in proper to have high score.
 
 ![Menu scoreboard](assets/img/readmeimg/scoreboard.png)
 
@@ -74,7 +74,7 @@ Give it a try!
   - The user will have the ability to play three "cards" gestures.
   - The score point in game is linked to the rounds, for each win/round will increase the score.
   - Information regarding who won the round will appear on screen.
-  - Information regarding who won the whole game will appear on screen "Only if game rounds set to 5 or 10 rounds.
+  - Information regarding who won the whole game will appear on screen "Only if game rounds set to 1 or 5 or 10 rounds.
   - The chosen card/gesture will elevate to the play deck.  
 
 ![In game mode Classic](assets/img/readmeimg/ingameclassic.png)
@@ -99,6 +99,8 @@ To complete that i need to improve my programming skills and to learn more.
 
 ### Fixes and bugs left
 
+- Implement clear board and stop the game when passing set round limit.
+
 ## Languages, Frameworks, IDE, Libraries and Programs
 
 [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -114,10 +116,10 @@ To complete that i need to improve my programming skills and to learn more.
 - Was used to make the websites  to extend the functionality with the javascript code.
 
 [Jquery library](https://jquery.com/)
-- Was used because bootsrap JS dependend on Jquery library.
+- Was used because bootstrap JS dependent on Jquery library.
 
 [Javascript](https://en.wikipedia.org/wiki/JavaScript)
-- Was used for to code relevant responses to user actions and calculating.
+- Was used for to code relevant responses to user actions, logics and calculating.
 
 [GitHub:](https://github.com/)
 - GitHub was used to store the projects code after being pushed from Git.
@@ -126,7 +128,7 @@ To complete that i need to improve my programming skills and to learn more.
 - Was used to develop and write my project.
 
 [Gitpod:](https://www.gitpod.io/)
-- Was used to complement the developmend and write my project and push all commits through integrated "git" to Github.
+- Was used to complement the development and write my project and push all commits through integrated "git" to Github.
 
 
 ## Testing 
@@ -135,21 +137,21 @@ To complete that i need to improve my programming skills and to learn more.
 
 - HTML
   - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2F)
-  - Errors and warning related to bootstrap.
+  - 
 
 - CSS
   - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fsaleh88hbg.github.io%2FRPSLS-GAME-MS2%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv) 
-  - Errors and warning related to bootstrap.
+  - No errors were found when passing through the test.
 
 - Javascript
   - No errors were found when passing through the official [(JSHint) validator](https://jshint.com/) 
 
 - DevTools: Chrome
-  - No errors were found in the console)   
+  - No errors were found in the console.   
 
 - Browser: Edge and Chrome
-  - No problems detected
-  - Responsive
+  - No problems detected.
+  - Responsive.
       
 ### Testing : Lighthouse
 
@@ -173,10 +175,10 @@ The live link can be found here - https://saleh88hbg.github.io/RPSLS-GAME-MS2/
 
 ## Cloning
 
-If you wish to clone this repository you can following steps:
+If you wish to clone this repository you can use following steps:
  - Go to the Git Hub website and log in.
  - Locate the Repository used for this project.
- - Under the Repository's name locate the button "Code" and once cklicked you will see the options to get the url to the repository.
+ - Under the Repository name locate the button "Code" and once clicked you will see the options to get the url to the repository
    copy the URL based on the protocol that you would like to use. 
  - At the terminal type `git clone` and paste the url copied from the step above.
 
@@ -192,15 +194,18 @@ If you wish to clone this repository you can following steps:
 ### Content 
 
 - Tutuorial on the build up of the application [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
+- Link in the about section "classic" [website](https://en.wikipedia.org/wiki/Rock_paper_scissors)
+- Link to the about section "modern" [website](https://www.wikihow.com/Play-Rock-Paper-Scissors-Lizard-Spock)
+
 
 ### Media
 
-- The Emoje used on the title are from: (https://www.w3schools.com/charsets/ref_emoji.asp)
+- The Emojis used on the title are from: (https://www.w3schools.com/charsets/ref_emoji.asp)
 - The PNG icons used for the in-game deck/board were taken from this open source site: (https://www.clipartkey.com/)
 
 ### Acknowledgments
 
-- My mentor Guido Cecilio for guidance and support.
+- My mentor Guido Cecilio for his guidance and support.
 - My family and especially my cousin "Ali Chehade" for guidance and support.
 - Code Institute idea from Project Portfolio 2 (Example Idea Nr 1)
 - "Prashant Yadav" for the beautiful tutorial and explanation [website](https://learnersbucket.com/tutorials/js-projects/rock-paper-scissor-lizard-spock-game-in-javascript/)
